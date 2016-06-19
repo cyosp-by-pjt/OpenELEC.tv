@@ -46,7 +46,7 @@ if [ "$MEDIACENTER" = "kodi" ]; then
   PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET xmlstarlet"
 
 # other packages
-  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET OpenELEC-settings"
+  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET cyELEC-settings"
   PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET peripheral.joystick"
   PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET repository.kodi.game"
   PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET inputstream.mpd"

@@ -6,7 +6,7 @@ diff -Naur kodi-5f1ace8/addons/skin.estuary/1080i/Settings.xml kodi-5f1ace8.patc
  				</item>
  				<item>
 +					<label>@DISTRONAME@</label>
-+					<onclick>RunAddon(service.openelec.settings)</onclick>
++					<onclick>RunAddon(service.cyelec.settings)</onclick>
 +					<icon>icons/settings/openelec.png</icon>
 +				</item>
 +				<item>

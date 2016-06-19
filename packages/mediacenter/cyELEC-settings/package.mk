@@ -16,19 +16,19 @@
 #  along with OpenELEC.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
-PKG_NAME="OpenELEC-settings"
-PKG_VERSION="0.8.0"
+PKG_NAME="cyELEC-settings"
+PKG_VERSION="e2bce86"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="prop."
-PKG_SITE="http://www.openelec.tv"
-PKG_GIT_URL="https://github.com/OpenELEC/service.openelec.settings.git"
+PKG_SITE=""
+PKG_GIT_URL="https://github.com/cyosp-by-pjt/service.cyelec.settings.git"
 PKG_GIT_BRANCH="master"
 PKG_DEPENDS_TARGET="toolchain Python connman pygobject dbus-python"
 PKG_PRIORITY="optional"
 PKG_SECTION=""
-PKG_SHORTDESC="OpenELEC-settings: Settings dialog for OpenELEC"
-PKG_LONGDESC="OpenELEC-settings: is a settings dialog for OpenELEC"
+PKG_SHORTDESC="cyELEC-settings: Settings dialog for cyELEC"
+PKG_LONGDESC="cyELEC-settings: is a settings dialog for cyELEC"
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
@@ -50,11 +50,11 @@ post_makeinstall_target() {
 #      rm -f resources/lib/modules/bluetooth.py
 #    fi
 
-  python -Wi -t -B $ROOT/$TOOLCHAIN/lib/python2.7/compileall.py $INSTALL/usr/share/kodi/addons/service.openelec.settings/resources/lib/ -f
-  rm -rf `find $INSTALL/usr/share/kodi/addons/service.openelec.settings/resources/lib/ -name "*.py"`
+  python -Wi -t -B $ROOT/$TOOLCHAIN/lib/python2.7/compileall.py $INSTALL/usr/share/kodi/addons/service.cyelec.settings/resources/lib/ -f
+  rm -rf `find $INSTALL/usr/share/kodi/addons/service.cyelec.settings/resources/lib/ -name "*.py"`
 
-  python -Wi -t -B $ROOT/$TOOLCHAIN/lib/python2.7/compileall.py $INSTALL/usr/share/kodi/addons/service.openelec.settings/oe.py -f
-  rm -rf $INSTALL/usr/share/kodi/addons/service.openelec.settings/oe.py
+  python -Wi -t -B $ROOT/$TOOLCHAIN/lib/python2.7/compileall.py $INSTALL/usr/share/kodi/addons/service.cyelec.settings/oe.py -f
+  rm -rf $INSTALL/usr/share/kodi/addons/service.cyelec.settings/oe.py
 }
 
 post_install() {
